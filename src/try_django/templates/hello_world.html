@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title%}
+Matthew's wonderland
+{% endblock %}
+
+{% block content %}
+
+<p>I am learning Django and it's v cool</p>
+
+    {% for a in my_list %}
+        <li> {{ a }} </li>
+    {% endfor %}
+{% endblock %}

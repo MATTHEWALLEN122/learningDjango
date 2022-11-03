@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title%}
+Matthew's wonderland
+{% endblock %}
+
+{% block content %}
+
+{{ title }}
+
+{{ user }}
+
+{{ user.is_authenticated }}
+
+{% if user.is_authenticated %}
+
+<h>User only data</h>
+{{ user }}
+    {% for a in my_list %}
+        <li> {{ a }} </li>
+    {% endfor %}
+
+{%  endif %}
+
+{% endblock %}
